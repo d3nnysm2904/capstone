@@ -1,0 +1,31 @@
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 1rem;
+    margin: 0 auto;
+    height: 40rem;
+    border: 1px solid #dd02fa;
+    border-radius: 15px;
+    padding: 1%;
+    background-color: rgba(146, 9, 116, 0.218);
+}
+
+input {
+    margin: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.error {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+
+
+
+}

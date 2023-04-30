@@ -1,0 +1,26 @@
+.JobCard {
+    width: 50%;
+    display: flex;
+    margin-top: 1px;
+    transition: all .2s ease-in-out;
+    color: rgb(20, 20, 20);
+}
+
+.card-header {
+    background-color: rgba(46, 118, 177, 0.726);
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    align-self: end;
+}
+
+.JobCard:hover {
+    cursor: pointer;
+    text-decoration: none;
+    transform: scale(1.1);
+
+
+
+}

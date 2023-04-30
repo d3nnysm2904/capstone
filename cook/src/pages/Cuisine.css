@@ -1,0 +1,23 @@
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem
+}
+
+.Card img {
+    width: 100%;
+    border-radius: 2rem;
+
+}
+
+.Card a {
+    text-decoration: none;
+}
+
+.Card h4 {
+    text-align: center;
+    /* padding: 1rem; */
+    width: max-content;
+
+
+}

@@ -1,0 +1,25 @@
+body {
+    background-image: url("job.jpeg");
+    background-repeat: no-repeat;
+    background-size: unset
+}
+.Home {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    color: rgb(7, 7, 7);
+        font-size: x-large;
+        font-weight: bolder;
+}
+
+h1 {
+    color: rgb(242, 235, 235);
+        font-size: 100px;
+    }
+        h2 {
+            color: rgb(242, 235, 235);
+        }
+    
+        .welcome {
+            color: rgb(236, 229, 229);
+}

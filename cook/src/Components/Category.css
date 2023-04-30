@@ -1,0 +1,25 @@
+.List {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+
+}
+
+
+
+h4 {
+
+    font-size: 0.8rem;
+}
+
+svg {
+    color: rgb(20, 20, 20);
+    font-size: 2.5rem;
+
+}
+
+.active {
+    background: linear-gradient(to rigth, #f27121, #e94057);
+
+
+}

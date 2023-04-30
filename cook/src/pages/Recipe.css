@@ -1,0 +1,54 @@
+.Recipes {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.active {
+    background: linear-gradient(35deg, #494949, #313131);
+    color: white
+}
+
+.Recipes img {
+    margin-left: -10rem;
+    margin-top: 15rem;
+    width: fit-content;
+    height: 20rem;
+}
+
+
+.Recipes h2 {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    margin-left: -300px;
+    font-weight: 600;
+
+}
+
+button {
+    padding: 1rem 2rem;
+    color: #313131;
+    background: white;
+    border: 2px solid black;
+    margin-right: 2rem;
+    font-weight: 600;
+    margin-left: 8rem;
+}
+
+ul {
+    margin-top: 2rem;
+}
+
+li {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.Info {
+    margin-left: 15rem;
+}
