@@ -1,10 +1,10 @@
 
-\echo 'Delete and recreate jobly db?'
+\echo 'Delete and recreate cook db?'
 \prompt 'Return for yes or control-C to cancel > ' foo
 
 DROP DATABASE cook;
 CREATE DATABASE cook;
-\connect cook
+\c connect cook
 
 \i cook-schema.sql
 
