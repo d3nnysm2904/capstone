@@ -21,7 +21,7 @@ CASCADE;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,  
-  username varchar(25) ,
+  username PRIMARY KEY varchar(25) ,
   password TEXT NOT NULL,
   first_name text NOT NULL,
   last_name text NOT NULL,
