@@ -16,43 +16,44 @@ CREATE DATABASE cookdb;
 DROP TABLE IF EXISTs users 
 CASCADE;
 
-DROP TABLE IF EXISTS user_recipes 
-CASCADE;
+-- DROP TABLE IF EXISTS user_recipes 
+-- CASCADE;
 
 CREATE TABLE users (
-  id SERIAL PRIMARY KEY,  
-  username PRIMARY KEY varchar(25) ,
+  id SERIAL,  
+  username  VARCHAR(25) PRIMARY KEY ,
   password TEXT NOT NULL,
   first_name text NOT NULL,
   last_name text NOT NULL,
-  email text NOT NULL CHECK (position('@' IN email) > 1)
+  email text NOT NULL CHECK (position('@' IN email) > 1),
+  is_admin BOOLEAN NOT NULL DEFAULT FALSE
 );
 
-CREATE TABLE user_recipes (
-  id SERIAL PRIMARY KEY,
-  username_id INTEGER REFERENCES users ON DELETE CASCADE,
-  recipe_id INTEGER
+-- CREATE TABLE user_recipes (
+--   id SERIAL PRIMARY KEY,
+--   username_id INTEGER REFERENCES users ON DELETE CASCADE,
+--   recipe_id INTEGER
   
-);
+-- );
 
-INSERT INTO users
-  (username, password,first_name, last_name,email)
-VALUES
-  ('d3nny','1234','denny','sanchez','denny@icloud.com');
+-- INSERT INTO users
+--   (username, password,first_name, last_name,email)
+-- VALUES
+--   ('d3nny','1234','denny','sanchez','denny@icloud.com');
 
-INSERT INTO users
-  (username, password,first_name, last_name,email)
-VALUES
-('yakio','12343','yetzi','obando','yaki@icloud.com');
+-- INSERT INTO users
+--   (username, password,first_name, last_name,email)
+-- VALUES
+-- ('yakio','12343','yetzi','obando','yaki@icloud.com');
 
 
-INSERT INTO user_recipes
-(username_id,recipe_id)
-VALUES
-(1,20);
+-- INSERT INTO user_recipes
+-- (username_id,recipe_id)
+-- VALUES
+-- (1,20);
 
-INSERT INTO user_recipes
-(username_id,recipe_id)
-VALUES
-(2,20);
+-- INSERT INTO user_recipes
+-- (username_id,recipe_id)
+-- VALUES
+-- (2,20);
 

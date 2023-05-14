@@ -2,8 +2,8 @@
 
 /** Shared config for application; can be required many places. */
 
-// require( "dotenv" ).config();
-// require( "colors" );
+require( "dotenv" ).config();
+require( "colors" );
 
 const SECRET_KEY = process.env.SECRET_KEY || "zBoWN2opM3G5PbAUoM43";
 
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 function getDatabaseUri ()
 {
     return ( process.env.NODE_ENV === "test" )
-        ? "jobly_test"
+        ? "cookdb"
         : process.env.DATABASE_URL || "postgresql://test_iser:mypassword@localhost/cookdb";
 }
 
@@ -22,7 +22,7 @@ function getDatabaseUri ()
 // WJB: Evaluate in 2021 if this should be increased to 13 for non-test use
 const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1 : 12;
 
-console.log( "Jobly Config:".green );
+console.log( "Cook Config:".green );
 console.log( "SECRET_KEY:".yellow, SECRET_KEY );
 console.log( "PORT:".yellow, PORT.toString() );
 console.log( "BCRYPT_WORK_FACTOR".yellow, BCRYPT_WORK_FACTOR );
