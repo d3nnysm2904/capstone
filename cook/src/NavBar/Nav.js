@@ -12,11 +12,13 @@ const NotLogIn = () =>
             <Link className='Logo' to={ '/home' } >
                 Home
             </Link>
+            <br/>
             <Link className='Logo' to={ '/signup' } >
-                Sign up
+                Signup
             </Link>
+            <br/>
             <Link className='Logo' to={ '/login' } >
-                Log in
+                Login
             </Link>
 
         </div>
@@ -32,9 +34,9 @@ const isLogIn = ( name, logout ) =>
                     Home
                 </Link>
         
-        
-                <NavLink className="nav-link" to="/" onClick={ logout }>
-                    Log out { name }
+        <br/>
+                <NavLink className="Logo" to="/" onClick={ logout }> 
+                Logout {name}
                 </NavLink>
             
                 </div>

@@ -33,14 +33,14 @@ function Recipe ()
 
             <div className='Info' >
                 <button
-                    className={ active === 'instruccions' ? 'active' : '' }
+                    className={ active === 'instruccions' ? 'actives' : 'notActive' }
                     onClick={
                         () =>
                             setActive( 'instruccions' ) } >
                     Instruccions
                 </button>
                 <button
-                    className={ active === 'ingredients' ? 'active' : '' }
+                    className={ active === 'ingredients' ? 'actives' : '' }
                     onClick={
                         () =>
                             setActive( 'ingredients' ) } >

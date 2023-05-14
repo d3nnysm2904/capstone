@@ -42,7 +42,7 @@ const LoginForm = ( { login } ) =>
                     <div className="form-group">
                         <label htmlFor="username"></label>
                         <input
-                            className="form-control"
+                         
                             required
                             id="username"
                             type="text"
@@ -54,7 +54,7 @@ const LoginForm = ( { login } ) =>
                     </div>
                     <label htmlFor="password"></label>
                     <input
-                        className="form-control"
+                        
                         required
                         id="password"
                         type="password"

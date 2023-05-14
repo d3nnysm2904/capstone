@@ -1,5 +1,5 @@
 .Recipes {
-    margin-top: 2rem;
+    margin-top: rem;
     margin-bottom: 3rem;
     display: flex;
     width: 100%;
@@ -8,7 +8,7 @@
 
 }
 
-.active {
+.actives {
     background: linear-gradient(35deg, #494949, #313131);
     color: white
 }
@@ -27,6 +27,7 @@
     padding: 1rem;
     margin-left: -300px;
     font-weight: 600;
+    color: #313131;
 
 }
 
@@ -42,13 +43,26 @@ button {
 
 ul {
     margin-top: 2rem;
+    ;
 }
 
 li {
     font-size: 1.2rem;
     line-height: 2.5rem;
+
 }
 
 .Info {
     margin-left: 15rem;
+}
+
+.ingredients{
+    margin-left: 25rem;
+    justify-content: center;
+    display: inline;
+    margin-top: -10rem;
+}
+
+.notActive{
+    display: flex;
 }

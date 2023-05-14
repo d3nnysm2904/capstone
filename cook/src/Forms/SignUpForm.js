@@ -44,10 +44,10 @@ const SignUpForm = ( { signup } ) =>
                     </h5>
                 ) }
                 <form onSubmit={ handleSubmit }>
-                    <div className="form-group">
+                    <div >
                         <label htmlFor="username"> </label>
                         <input
-                            className="form-control"
+                            
                             required
                             id="username"
                             type="text"
@@ -57,10 +57,10 @@ const SignUpForm = ( { signup } ) =>
                             onChange={ handleChange }
                         ></input>
                     </div>
-                    <div className="form-group">
+                    <div>
                         <label htmlFor="password"></label>
                         <input
-                            className="form-control"
+                           
                             required
                             id="password"
                             type="password"
@@ -70,10 +70,10 @@ const SignUpForm = ( { signup } ) =>
                             onChange={ handleChange }
                         ></input>
                     </div>
-                    <div className="form-group">
+                    <div >
                         <label htmlFor="firstName"></label>
                         <input
-                            className="form-control"
+                            
                             required
                             id="firstName"
                             type="text"
@@ -83,10 +83,10 @@ const SignUpForm = ( { signup } ) =>
                             onChange={ handleChange }
                         ></input>
                     </div>
-                    <div className="form-group">
+                    <div >
                         <label htmlFor="lastName"></label>
                         <input
-                            className="form-control"
+                       
                             required
                             id="lastName"
                             type="text"
@@ -96,11 +96,11 @@ const SignUpForm = ( { signup } ) =>
                             onChange={ handleChange }
                         ></input>
                     </div>
-                    <div className="form-group">
+                    <div >
                         <label htmlFor="email"></label>
 
                         <input
-                            className="form-control"
+                           
                             required
                             id="email"
                             type="text"
