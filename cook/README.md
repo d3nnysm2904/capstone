@@ -1,4 +1,40 @@
+# Recipes website capstone
+
+#### Find Recipes to make 
+
+
+- Link : 
+ https://long-tiger.surge.sh/
+
+ ### Features:
+ 
+The Website will have a search bar, allowing the user to look for specific types of food, will have a section for different types of food ranking in popularity. 
+Once the desired dish is found , it will come with a summary of how  its done , the instructions and ingredients for the dish.
+Front end and Back end will be evenly focused.
+
+
+### API:
+
+	-Api :https://spoonacular.com/food-api	
+
+
+### Tech Stack:
+	-Front end :ReactJs
+	-Backend :Node.Js
+	-Database:PostgresSQL    \
+
+###  Project Proposal:
+https://docs.google.com/document/d/1C1ysaT-sl7lNbJrTJoLQp1MLHTOcZOBHMazps-Jw9_E/edit#heading=h.4p7xi5bvhxdr
+
+
+
+### Future Enhancement:
+     -Once the user is logged in , will be able to save the recepies 
+     -User will be able to create recipes 
+      
 # Getting Started with Create React App
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +104,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+	
