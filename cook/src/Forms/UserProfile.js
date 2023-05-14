@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./SignUpForm.css";
 import { Navigate } from "react-router-dom";
 import UserContext from "../UseContext";
-import JoblyApi from "../API/Api";
+import CookApi from "../API/Api";
 
 const UserProfile = () =>
 {
@@ -34,7 +34,7 @@ const UserProfile = () =>
 
         try
         {
-            let isPasswordCorrect = await JoblyApi.checkUserNamePassword( {
+            let isPasswordCorrect = await CookApi.checkUserNamePassword( {
                 username: currUser.username,
                 password: formData.password,
             } );
@@ -46,7 +46,7 @@ const UserProfile = () =>
 
         try
         {
-            const userUpdated = await JoblyApi.updateUser( currUser.username, {
+            const userUpdated = await CookApi.updateUser( currUser.username, {
                 firstName: formData.firstName,
                 lastName: formData.lastName,
                 email: formData.email,
@@ -88,7 +88,7 @@ const UserProfile = () =>
                         ></input>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="firstName">First Name: </label>
+                        <label htmlFor="first_name">First Name: </label>
                         <input
                             className="form-control"
                             required
@@ -105,7 +105,7 @@ const UserProfile = () =>
                         <input
                             className="form-control"
                             required
-                            id="lastName"
+                            id="last_name"
                             type="text"
                             name="lastName"
                             placeholder=""

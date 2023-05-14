@@ -2,11 +2,13 @@ import './Category.css';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiFullPizza, GiHamburger, GiNoodles, GiChopsticks } from 'react-icons/gi';
+import UserContext from "../UseContext"
 
-import React from 'react';
+import React, { useContext, useState } from "react";
 
 function Category ()
 {
+    const { currUser } = useContext( UserContext );
     return (
         <div className='List'>
             <div className="SLink" >
@@ -38,7 +40,7 @@ function Category ()
 }
 
 
-// using styled copmponents i was able to add style to the Navlink, is the only way i found 
+// using styled components i was able to add style to the Navlink, is the only way i found 
 const SLink = styled( NavLink )`
 {
     display: flex;
